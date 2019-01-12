@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Arman academy</title>
+    <link rel="icon" href="img/logo-small.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+<body>
+  
+   <!--         menu section start     -->
+   <section id="top-bar">
+     <div>
+          <ul class="register">
+              <li><a href="signup.html">Register</a></li>
+              <li><a href="login.html">Login</a></li>
+          </ul>
+     </div>
+     <div class="admin-status">
+          <span class="admin-status-text">Admin:</span>
+          <span class="admin-status-subtext">Online</span>
+          <span class="admin-status-subtext-offline">Offline</span>
+     </div>
+   </section>
+   <!--         menu section end     -->
+
+   <!--         menu section start     -->
+   <section id="menu-bar">
+        <nav class="navbar">
+            <span class="open-slide">
+              <a onclick="openSlideMenu()" id="side-menu-button">
+                <i class="fa fa-bars side-menu-bar"></i>
+              </a>
+            </span>
+            <span><a href="index.html" class="img-link"><img src="img/logo.png" id="main-logo"></a></span>  
+            <ul class="navbar-nav">
+              <li><a href="index.html" class="webmenu-class">Exchange</a></li>
+              <li><a href="terms.html" class="active-class">T & C</a></li>
+              <li><a href="contact.html" class="webmenu-class">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+          <a class="btn-close" onclick="closeSlideMenu()" id="close-buttion-top">&times;</a>
+          <a href="index.html" class="mobile-class">Exchange</a>
+          <a href="terms.html" class="mobile-class-active">T & C</a>
+          <a href="contact.html" class="mobile-class">Contact</a>
+        </div>
+    </section>
+   <!--         menu section end     -->
+   
+   <!--         terms and condition section start      -->
+
+   <section id="terms-section">
+     <div class="container main-body-container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 terms-bos">
+                   <p class="terms-title">Our Terms and Conditions</p>
+                   <div class="terms-list">
+                        <p class="terms-subtitle">1. Our order completed time max 5 minutes to 1 hour.</p>
+                        <p class="terms-subtitle">2. Our buy-sell and exchange rate is too low so that Paypal fee will be bear yourself.</p>
+                        <p class="terms-subtitle">3. Sometime we will ask you some personal question for inquiries of paypal buy-sell or exchange</p>
+                        <p class="terms-subtitle">4. Due payment of any transaction is not possible.</p>
+                        <p class="terms-subtitle">5. Sometimes we stop receiving some currency for to much reserve or low balance in our account.</p>
+                        <p class="terms-subtitle">6. If you want refund your paid amount 2% fee will be deducted for that.</p>
+                        <p class="terms-subtitle">7. For Bkash or Rocket or Bank Payment refund 3% fee will be deducted.</p>
+                        <p class="terms-subtitle">8. Skrill minimum order $30.</p>
+                   </div>
+                </div>
+                <div class="col-sm-1"></div>   
+            </div>
+        </div>
+     </div>
+   </section>
+
+
+   <!--         terms and condition section end      -->
+
+   <footer id="footer">
+        <p class="footer-text">© Copyright - Developed by <a href="https://dev.vaidroad.com/" class="footer-link">VaidRoad</a> </p>
+   </footer>
+
+</body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
+</html>

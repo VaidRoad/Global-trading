@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Arman academy</title>
+    <link rel="icon" href="img/logo-small.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+<body>
+  
+   <!--         menu section start     -->
+   <section id="top-bar">
+     <div>
+          <ul class="register">
+              <li><a href="signup.html">Register</a></li>
+              <li><a href="login.html">Login</a></li>
+          </ul>
+     </div>
+     <div class="admin-status">
+          <span class="admin-status-text">Admin:</span>
+          <span class="admin-status-subtext">Online</span>
+          <span class="admin-status-subtext-offline">Offline</span>
+     </div>
+   </section>
+   <!--         menu section end     -->
+
+   <!--         menu section start     -->
+   <section id="menu-bar">
+        <nav class="navbar">
+            <span class="open-slide">
+              <a onclick="openSlideMenu()" id="side-menu-button">
+                <i class="fa fa-bars side-menu-bar"></i>
+              </a>
+            </span>
+            <span><a href="index.html" class="img-link"><img src="img/logo.png" id="main-logo"></a></span> 
+            <ul class="navbar-nav">
+              <li><a href="index.html" class="active-class">Exchange</a></li>
+              <li><a href="terms.html" class="webmenu-class">T & C</a></li>
+              <li><a href="contact.html" class="webmenu-class">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+          <a class="btn-close" onclick="closeSlideMenu()" id="close-buttion-top">&times;</a>
+          <a href="index.html" class="mobile-class-active">Exchange</a>
+          <a href="terms.html" class="mobile-class">T & C</a>
+          <a href="contact.html" class="mobile-class">Contact</a>
+        </div>
+    </section>
+   <!--         menu section end     -->
+
+   <!--             POPUP SECTION start           -->
+ 
+  <section id="onlick-traing-fixed-body">
+      <div class="container" id="onlick-traing-fixed-subbody">
+           <div>
+                <i class="far fa-times-circle popup-close"></i>
+           </div>
+            <table style="width:100%" class="popup-main-table">
+                    <tr class="popup-table-row1">
+                      <th><span class="popup-table-title">Send Amount</span></th>
+                      <th><span class="popup-table-title">From</span></th> 
+                      <th><span class="popup-table-title">Receive</span></th>
+                      <th><span class="popup-table-title">Receive Amount</span></th>
+                    </tr>
+                    <tr class="popup-table-row2">
+                      <td><span class="popup-table-text popup-first-value">00.00</span></td>
+                      <td><img class="second-list-img pop-fisrt-img" src="img/Rocket.png"><span class="popup-table-text popup-img-text pop-fisrt-text">Rocket Personal</span></td> 
+                      <td><img class="first-list-img pop-second-img" src="img/perfect.png"><span class="popup-table-text popup-img-text pop-second-text">Perfect Money</span></td>
+                      <td><span class="popup-table-text popup-second-value">00.00</span></td>
+                    </tr>
+           </table> 
+           <div>
+                <p class="transaction-title">Fill up the form for money transaction</p>
+                <div class="transaction-box">
+                    <p class="transaction-subtitle">Email address</p>
+                    <input type="" name="" class="transaction-input">
+                </div>
+                <div class="transaction-box">
+                    <p class="transaction-subtitle">Paypal id</p>
+                    <input type="" name="" class="transaction-input">
+                </div>
+                <div class="transaction-box" >
+                    <p class="transaction-subtitle">Phone number</p>
+                    <input type="" name="" class="transaction-input">
+                </div>
+                <div class="transaction-box">
+                    <button class="transaction-button">Submit</button>
+                </div>
+           </div>        
+      </div>
+  </section>
+
+   <!--             POPUP SECTION end             -->
+   
+   <!--         Body section start     -->
+   <section id="second-section">
+     <div class="container main-body-container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="exchange-main-titel main-page-title">Biai Exchanges Rate: <span class="first-chang-title">.....</span> to 
+                <span class="second-chang-title">.....</span></p>
+                <div class="col-sm-9 exchange-calculator-body">
+                    <div class="col-sm-6 exchange-calculator-body-first-part">
+                        <div class="col-sm-5">
+                            <p class="calculator-title">Send Amount</p>
+                            <input type="Number" name="" class="calculator-input" placeholder="00.00">
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="calculator-title">Send Form</p>
+                            <ul class="first-ul-list">
+                                <li class="first-list" data-name="Perfect Money"><img class="first-list-img" src="img/perfect.png"><span class="first-list-text">Perfect Money</span></li>
+                                <li class="first-list" data-name="Payeer"><img class="first-list-img" src="img/p11.png"><span class="first-list-text">Payeer</span></li>
+                                <li class="first-list" data-name="Skrill"><img class="first-list-img" src="img/Skrill.png"><span class="first-list-text">Skrill</span></li>
+                                <li class="first-list" data-name="Payoneer"><img class="first-list-img" src="img/Payoneer.png"><span class="first-list-text">Payoneer</span></li>
+                                <li class="first-list" data-name="Coinbase"><img class="first-list-img" src="img/Coinbase.png"><span class="first-list-text">Coinbase</span></li>
+                                <li class="first-list" data-name="Neteller"><img class="first-list-img" src="img/Neteller.png"><span class="first-list-text">Neteller</span></li>
+                                <li class="first-list" data-name="BitCoin"><img class="first-list-img" src="img/BitCoin .png"><span class="first-list-text">BitCoin </span></li>
+                                <li class="first-list" data-name="Webmoney"><img class="first-list-img" src="img/Webmoney.png"><span class="first-list-text">Webmoney</span></li>
+                                <li class="first-list" data-name="Advcash"><img class="first-list-img" src="img/Advcash.png"><span class="first-list-text">Advcash</span></li>
+                                <li class="first-list" data-name="DBBL"><img class="first-list-img" src="img/DBBL.png"><span class="first-list-text">DBBL</span></li>
+                                <li class="first-list" data-name="Brac"><img class="first-list-img" src="img/Brac.jpg"><span class="first-list-text">Brac</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 exchange-calculator-body-first-part">
+                      <div class="col-sm-7">
+                          <p class="calculator-title">Receive To</p>
+                          <ul class="second-ul-list">
+                                <li class="second-list" data-name="Bkash Personal"><img class="second-list-img" src="img/Bkash.png"><span class="second-list-text">Bkash Personal</span></li>
+                                <li class="second-list" data-name="Rocket Personal"><img class="second-list-img" src="img/Rocket.png"><span class="second-list-text">Rocket Personal</span></li>
+                                <li class="second-list" data-name="Perfect Money"><img class="second-list-img" src="img/perfect.png"><span class="second-list-text">Perfect Money</span></li>
+                                <li class="second-list" data-name="Payeer"><img class="second-list-img" src="img/p11.png"><span class="second-list-text">Payeer</span></li>
+                                <li class="second-list" data-name="Skrill"><img class="second-list-img" src="img/Skrill.png"><span class="second-list-text">Skrill</span></li>
+                                <li class="second-list" data-name="Payoneer"><img class="second-list-img" src="img/Payoneer.png"><span class="second-list-text">Payoneer</span></li>
+                                <li class="second-list" data-name="Coinbase"><img class="second-list-img" src="img/Coinbase.png"><span class="second-list-text">Coinbase</span></li>
+                                <li class="second-list" data-name="Neteller"><img class="second-list-img" src="img/Neteller.png"><span class="second-list-text">Neteller</span></li>
+                                <li class="second-list" data-name="BitCoin"><img class="second-list-img" src="img/BitCoin .png"><span class="second-list-text">BitCoin </span></li>
+                                <li class="second-list" data-name="Webmoney"><img class="second-list-img" src="img/Webmoney.png"><span class="second-list-text">Webmoney</span></li>
+                                <li class="second-list" data-name="Advcash"><img class="second-list-img" src="img/Advcash.png"><span class="second-list-text">Advcash</span></li>
+                                <li class="second-list" data-name="DBBL"><img class="second-list-img" src="img/DBBL.png"><span class="second-list-text">DBBL</span></li>
+                                <li class="second-list" data-name="Brac"><img class="second-list-img" src="img/Brac.jpg"><span class="second-list-text">Brac</span></li>
+                            </ul>
+                      </div>
+                      <div class="col-sm-5 calculator-title">
+                          <p>Receive Amount</p>
+                          <div class="receive-amount-box">
+                              <p class="receive-amount-text">00.00</p>
+                          </div>
+                      </div>
+                    </div> 
+                    <div class="confirm-payment-box">
+                        <p class="confirm-payment">Confirm Payment</p> 
+                    </div>    
+                </div>
+                <div class="col-sm-3 third-list-box">
+                    <div> 
+                        <p class="today-rate">Today Rate</p>
+                        <ul class="third-ul-list">
+                                <li class="third-list"><img class="first-list-img" src="img/Bkash.png"><span class="first-list-text">Bkash</span><span class="first-list-rate">1USD = 83BDT</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Rocket.png"><span class="first-list-text">Rocket</span><span class="first-list-rate">1USD = 83BDT</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/perfect.png"><span class="first-list-text">Perfect Money</span><span class="first-list-rate">1USD = 0.90USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/p11.png"><span class="first-list-text">Payeer</span><span class="first-list-rate">1USD = 0.90USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Skrill.png"><span class="first-list-text">Skrill</span><span class="first-list-rate">1USD = 0.90USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Payoneer.png"><span class="first-list-text">Payoneer</span><span class="first-list-rate">1USD = 0.90USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Coinbase.png"><span class="first-list-text">Coinbase</span><span class="first-list-rate">1USD = 0.90USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Neteller.png"><span class="first-list-text">Neteller</span><span class="first-list-rate">1USD = 0.90USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/BitCoin .png"><span class="first-list-text">BitCoin </span><span class="first-list-rate">1USD = 0.90USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Webmoney.png"><span class="first-list-text">Webmoney</span><span class="first-list-rate">1USD = 0.90USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Advcash.png"><span class="first-list-text">Advcash</span><span class="first-list-rate">1USD = 0.90USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/DBBL.png"><span class="first-list-text">DBBL</span><span class="first-list-rate">1USD = 83BDT</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Brac.jpg"><span class="first-list-text">Brac</span><span class="first-list-rate">1USD = 83BDT</span></li>
+                        </ul>
+                    </div>
+                    <div> 
+                        <p class="today-rate-two">Available Balance</p>
+                        <ul class="third-ul-list">
+                                <li class="third-list"><img class="first-list-img" src="img/Bkash.png"><span class="first-list-text balance-title">Bkash</span><span class="first-list-rate balance-amount">83300BDT</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Rocket.png"><span class="first-list-text balance-title">Rocket</span><span class="first-list-rate balance-amount">300000BDT</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/perfect.png"><span class="first-list-text balance-title">Perfect Money</span><span class="first-list-rate balance-amount">190USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/p11.png"><span class="first-list-text balance-title">Payeer</span><span class="first-list-rate balance-amount">990USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Skrill.png"><span class="first-list-text balance-title">Skrill</span><span class="first-list-rate balance-amount">0.0USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Payoneer.png"><span class="first-list-text balance-title">Payoneer</span><span class="first-list-rate balance-amount">0.0USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Coinbase.png"><span class="first-list-text balance-title">Coinbase</span><span class="first-list-rate balance-amount">0.0USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Neteller.png"><span class="first-list-text balance-title">Neteller</span><span class="first-list-rate balance-amount">120USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/BitCoin .png"><span class="first-list-text balance-title">BitCoin </span><span class="first-list-rate balance-amount">100USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Webmoney.png"><span class="first-list-text balance-title">Webmoney</span><span class="first-list-rate balance-amount">110USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Advcash.png"><span class="first-list-text balance-title">Advcash</span><span class="first-list-rate balance-amount">400.0USD</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/DBBL.png"><span class="first-list-text balance-title">DBBL</span><span class="first-list-rate balance-amount">0.0BDT</span></li>
+                                <li class="third-list"><img class="first-list-img" src="img/Brac.jpg"><span class="first-list-text balance-title">Brac</span><span class="first-list-rate balance-amount">0.0BDT</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+   </section>
+
+   <!--         Main body section end     -->
+
+   <section id="tabel-section">
+     <div class="container main-body-container">
+        <div class="row">
+            <div class="col-sm-9">
+                <p class="exchange-main-titel">Latest Exchanges</p>
+                <table style="width:100%" class="exchange-table">
+                    <tr class="exchange-table-row">
+                      <th><span class="table-title-text">Send</span></th>
+                      <th><span class="table-title-text">Receive</span></th> 
+                      <th><span class="table-title-text">Amount</span></th>
+                      <th><span class="table-title-text">Status</span></th>
+                      <th><span class="table-title-text">Date</span></th>
+                    </tr>
+                    <tr class="exchange-table-row">
+                      <td><img class="first-list-img" src="img/perfect.png"><span class="first-list-text">Perfect Money</span></td>
+                      <td><img class="second-list-img" src="img/Rocket.png"><span class="second-list-text">Rocket Personal</span></td> 
+                      <td><span class="table-list-text">50 USD</span></td>
+                      <td><span class="table-list-text">Processing</span></td>
+                      <td><span class="table-list-text">10/1/2019</span></td>
+                    </tr>
+                    <tr class="exchange-table-row">
+                      <td><img class="first-list-img" src="img/p11.png"><span class="first-list-text">Payeer</span></td>
+                      <td><img class="second-list-img" src="img/BitCoin .png"><span class="second-list-text">BitCoin</span></td> 
+                      <td><span class="table-list-text">12 USD</span></td>
+                      <td><span class="table-list-text">Processing</span></td>
+                      <td><span class="table-list-text">10/1/2019</span></td>
+                    </tr>
+                    <tr class="exchange-table-row">
+                      <td><img class="first-list-img" src="img/Skrill.png"><span class="first-list-text">Skrill</span></td>
+                      <td><img class="second-list-img" src="img/Rocket.png"><span class="second-list-text">Rocket Personal</span></td> 
+                      <td><span class="table-list-text">1120 USD</span></td>
+                      <td><span class="table-list-text">Processing</span></td>
+                      <td><span class="table-list-text">10/1/2019</span></td>
+                    </tr>
+                    <tr class="exchange-table-row">
+                      <td><img class="first-list-img" src="img/perfect.png"><span class="first-list-text">Perfect Money</span></td>
+                      <td><img class="second-list-img" src="img/Neteller.png"><span class="second-list-text">Neteller</span></td> 
+                      <td><span class="table-list-text">30 USD</span></td>
+                      <td><span class="table-list-text">Done</span></td>
+                      <td><span class="table-list-text">10/1/2019</span></td>
+                    </tr>
+                    <tr class="exchange-table-row">
+                      <td><img class="first-list-img" src="img/Skrill.png"><span class="first-list-text">Skrill</span></td>
+                      <td><img class="second-list-img" src="img/Bkash.png"><span class="second-list-text">Bkash Personal</span></td> 
+                      <td><span class="table-list-text">80 USD</span></td>
+                      <td><span class="table-list-text">Done</span></td>
+                      <td><span class="table-list-text">9/1/2019</span></td>
+                    </tr>
+                    <tr class="exchange-table-row">
+                      <td><img class="first-list-img" src="img/BitCoin .png"><span class="first-list-text">BitCoin</span></td>
+                      <td><img class="second-list-img" src="img/Bkash.png"><span class="second-list-text">Bkash Personal</span></td> 
+                      <td><span class="table-list-text">45 USD</span></td>
+                      <td><span class="table-list-text">Done</span></td>
+                      <td><span class="table-list-text">9/1/2019</span></td>
+                    </tr>
+                    <tr class="exchange-table-row">
+                      <td><img class="first-list-img" src="img/perfect.png"><span class="first-list-text">Perfect Money</span></td>
+                      <td><img class="second-list-img" src="img/Skrill.png"><span class="second-list-text">Skrill</span></td> 
+                      <td><span class="table-list-text">120 USD</span></td>
+                      <td><span class="table-list-text">Failed</span></td>
+                      <td><span class="table-list-text">9/1/2019</span></td>
+                    </tr>
+                    <tr class="exchange-table-row">
+                      <td><img class="first-list-img" src="img/Advcash.png"><span class="first-list-text">Advcash</span></td>
+                      <td><img class="second-list-img" src="img/Rocket.png"><span class="second-list-text">Rocket Personal</span></td> 
+                      <td><span class="table-list-text">150 USD</span></td>
+                      <td><span class="table-list-text">Processing</span></td>
+                      <td><span class="table-list-text">9/1/2019</span></td>
+                    </tr>
+                    <tr class="exchange-table-row">
+                      <td><img class="first-list-img" src="img/Neteller.png"><span class="first-list-text">Neteller</span></td>
+                      <td><img class="second-list-img" src="img/Bkash.png"><span class="second-list-text">Bkash Personal</span></td> 
+                      <td><span class="table-list-text">40 USD</span></td>
+                      <td><span class="table-list-text">Failed</span></td>
+                      <td><span class="table-list-text">9/1/2019</span></td>
+                    </tr>
+                    <tr class="exchange-table-row">
+                      <td><img class="first-list-img" src="img/Webmoney.png"><span class="first-list-text">Webmoney</span></td>
+                      <td><img class="second-list-img" src="img/Advcash.png"><span class="second-list-text">Advcash</span></td> 
+                      <td><span class="table-list-text">20 USD</span></td>
+                      <td><span class="table-list-text">Done</span></td>
+                      <td><span class="table-list-text">8/1/2019</span></td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="col-sm-3">
+                <p class="trust-title">100% Trusted </p>
+                <div class="trust-police-box">
+                  <p class="trust-police">Welcome to Biai Bangladesh. This website just for freelancer, affiliate marketer, cpa marketer, internet advertiser & online income related members.
+                  Dollar buy sell is not allowed in Bangladesh. The Bangladesh bank says “Foreign currency can be purchased or sold only through dealers or money changers authorized by Bangladesh Bank. So dollar buy sell by a person is illegal and punishable crime. We are just help our online worker to convert their small amount of dollar which is not possible to exchange or sell BDT. Their is so many people of our country whos are earn very poor amount in month. But as a poor freelance and outsource its really impossible to buy sell dollar through Dealer and Money exchanges authorized by Bangladesh Bank. Bank don’t allow low amount and requires high fees. So we are the site just help them to sell their dollar and take BDT instant.
+                  You can trust us 100% to convert your currency to other currency or USD to BDT.
+                  </p>
+                  <div style="margin-top: 20px">
+                    <span class="trusted-title">Phone:</span><span class="trusted-num">017543784</span><br>
+                    <span class="trusted-title">Email:</span><span class="trusted-num">Biai@gmail.com</span>
+                  </div>  
+                </div>  
+            </div>
+        </div>
+     </div>
+   </section>
+
+   <footer id="footer">
+        <p class="footer-text">© Copyright - Developed by <a href="https://dev.vaidroad.com/" class="footer-link">VaidRoad</a> </p>
+   </footer>
+
+</body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
+</html>
